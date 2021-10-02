@@ -1176,21 +1176,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8675471555745088175, guid: 735c4d08cb64b824f8218a1309536cb4,
-        type: 3}
-      propertyPath: solver.leftArm.target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8675471555745088175, guid: 735c4d08cb64b824f8218a1309536cb4,
-        type: 3}
-      propertyPath: solver.rightArm.target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8675471555745088175, guid: 735c4d08cb64b824f8218a1309536cb4,
-        type: 3}
-      propertyPath: solver.spine.headTarget
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735c4d08cb64b824f8218a1309536cb4, type: 3}
 --- !u!1001 &4125001334429879625
