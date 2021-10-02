@@ -121,12 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &110336417 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 110336417, guid: 735c4d08cb64b824f8218a1309536cb4,
-    type: 3}
-  m_PrefabInstance: {fileID: 3714805659770554604}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &120922752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -488,15 +482,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfac4fa329d1f4f23814af71a247c14b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &606754594 stripped
+--- !u!4 &824320739 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 606754594, guid: 735c4d08cb64b824f8218a1309536cb4,
-    type: 3}
-  m_PrefabInstance: {fileID: 3714805659770554604}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &734479595 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 734479595, guid: 735c4d08cb64b824f8218a1309536cb4,
     type: 3}
   m_PrefabInstance: {fileID: 3714805659770554604}
   m_PrefabAsset: {fileID: 0}
@@ -527,20 +515,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 878873304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1885d47f6086b6640ac7f1e1d1137642, type: 3}
+  m_Script: {fileID: 11500000, guid: ac7fc23e4222ffd42a04531a30fa7504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ik: {fileID: 507889604}
-  centerEyeAnchor: {fileID: 110336417}
-  headAnchorPositionOffset: {x: 0, y: 0, z: 0}
-  headAnchorRotationOffset: {x: 0, y: 0, z: 0}
-  leftHandAnchor: {fileID: 606754594}
-  rightHandAnchor: {fileID: 734479595}
-  handAnchorPositionOffset: {x: 0, y: 0, z: 0}
-  handAnchorRotationOffset: {x: 0, y: 0, z: 0}
-  scaleMlp: 1
-  data:
-    scale: 0
+  vrik: {fileID: 507889604}
+  scaleMultiplier: 1
+  leftHandAnchor: {fileID: 824320739}
+  rightHandAnchor: {fileID: 1809516983}
+  hmdAnchor: {fileID: 1904002577}
+  settings:
+    scaleMlp: 1
+    headTrackerForward: {x: 0, y: 0, z: 1}
+    headTrackerUp: {x: 0, y: 1, z: 0}
+    handTrackerForward: {x: 0, y: 0, z: 1}
+    handTrackerUp: {x: 0, y: 1, z: 0}
+    footTrackerForward: {x: 0, y: 0, z: 1}
+    footTrackerUp: {x: 0, y: 1, z: 0}
+    headOffset: {x: 0, y: 0, z: 0}
+    handOffset: {x: 0, y: 0, z: 0}
+    footForwardOffset: 0
+    footInwardOffset: 0
+    footHeadingOffset: 0
+    pelvisPositionWeight: 1
+    pelvisRotationWeight: 1
+  calibrationData:
+    scale: 1
     head:
       used: 0
       localPosition: {x: 0, y: 0, z: 0}
@@ -873,6 +872,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &1809516983 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 734479595, guid: 735c4d08cb64b824f8218a1309536cb4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3714805659770554604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1873749230
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +909,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1904002577 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 110336417, guid: 735c4d08cb64b824f8218a1309536cb4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3714805659770554604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2009620870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1165,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HexaBodyPlayerV3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178288861737757285, guid: 735c4d08cb64b824f8218a1309536cb4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178288862903647958, guid: 735c4d08cb64b824f8218a1309536cb4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675471555745088175, guid: 735c4d08cb64b824f8218a1309536cb4,
+        type: 3}
+      propertyPath: solver.leftArm.target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675471555745088175, guid: 735c4d08cb64b824f8218a1309536cb4,
+        type: 3}
+      propertyPath: solver.rightArm.target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675471555745088175, guid: 735c4d08cb64b824f8218a1309536cb4,
+        type: 3}
+      propertyPath: solver.spine.headTarget
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735c4d08cb64b824f8218a1309536cb4, type: 3}
