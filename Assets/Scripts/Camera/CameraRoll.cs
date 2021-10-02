@@ -16,4 +16,11 @@ public class CameraRoll : MonoBehaviour {
         newPhoto.image.texture = newPhoto.texture;
         newPhoto.timestamp = System.DateTime.Now;
     }
+
+    public void RemoveFromRoll(Photo photo) {
+        photos.Remove(photo);
+    }
+    public void AddPhoto(Photo photo) {
+        photos.Add(photo);
+    }
 }

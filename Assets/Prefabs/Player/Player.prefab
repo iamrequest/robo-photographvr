@@ -336,7 +336,7 @@ PrefabInstance:
     - target: {fileID: 2129819513208956207, guid: d9a14b0c0e09c23429bbd81b7382dd91,
         type: 3}
       propertyPath: m_Name
-      value: HexaBodyPlayerV3
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8381584113591637742, guid: d9a14b0c0e09c23429bbd81b7382dd91,
         type: 3}
@@ -2064,6 +2064,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.1750001
       objectReference: {fileID: 0}
+    - target: {fileID: 1956254177687559782, guid: bd06488b26f9ac64c8cec017d1ae7e79,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 767d9a2015d819344b61d6f1c334a8cb, type: 2}
     - target: {fileID: 2942664748900920472, guid: bd06488b26f9ac64c8cec017d1ae7e79,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2224,6 +2229,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6374948972546553083, guid: bd06488b26f9ac64c8cec017d1ae7e79,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b7f7c0e96b06d6446aef1ed28fd4448a, type: 2}
     - target: {fileID: 7174637477590605037, guid: bd06488b26f9ac64c8cec017d1ae7e79,
         type: 3}
       propertyPath: m_LocalRotation.w
