@@ -8,7 +8,7 @@ public class PhotoDiscardBin : MonoBehaviour {
     public void TryDiscardPhoto(HVRGrabberBase hvrGrabberBase, HVRGrabbable hvrGrabbable) {
         if (hvrGrabbable.TryGetComponent(out Photo photo)) {
             //hvrGrabbable.ForceRelease();
-            Destroy(photo.gameObject, 1f);
+            Destroy(photo.gameObject);
         }
     }
 }
