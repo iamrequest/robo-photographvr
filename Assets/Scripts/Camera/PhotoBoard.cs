@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using System;
+using TMPro;
 using HurricaneVR.Framework.Core.Grabbers;
 using HurricaneVR.Framework.Core;
 
@@ -11,6 +12,7 @@ using HurricaneVR.Framework.Core;
 /// </summary>
 public class PhotoBoard : MonoBehaviour {
     public CameraRoll cameraRoll;
+    public TextMeshProUGUI pageNumText;
 
     [AssetsOnly]
     public GameObject photoSocketPrefab;
@@ -21,7 +23,7 @@ public class PhotoBoard : MonoBehaviour {
     public int rowCount, colCount;
     [Range(0f, 5f)]
     public float width, height;
-    public int currentPage;
+    public int currentPage, maxPages;
 
     [Range(0f, 5f)]
     public float debugSphereRadius;
@@ -39,6 +41,10 @@ public class PhotoBoard : MonoBehaviour {
     private void OnDisable() {
         cameraRoll.onPhotoAdded.RemoveListener(OnCameraRollUpdated);
         cameraRoll.onPhotoRemoved.RemoveListener(OnCameraRollUpdated);
+    }
+
+    private void Start() {
+        UpdatePageText();
     }
 
     private void OnCameraRollUpdated() {
@@ -102,7 +108,7 @@ public class PhotoBoard : MonoBehaviour {
                 Gizmos.color = Color.Lerp(Color.green,
                     Color.red,
                     (float) currentIteration / (float)iterations);
-                Gizmos.DrawWireSphere(transform.position + GetPositionOffset(r, c), debugSphereRadius);
+                Gizmos.DrawWireSphere(transform.position + transform.rotation * GetPositionOffset(r, c), debugSphereRadius);
             }
         }
     }
@@ -141,4 +147,20 @@ public class PhotoBoard : MonoBehaviour {
         }
     }
 
+    public void NextPage() {
+        currentPage = Mathf.Clamp(currentPage + 1, 0, maxPages);
+        RenderPage();
+
+        UpdatePageText();
+    }
+    public void PrevPage() {
+        currentPage = Mathf.Clamp(currentPage - 1, 0, maxPages);
+        RenderPage();
+
+        UpdatePageText();
+    }
+
+    public void UpdatePageText() {
+        pageNumText.text = $"Page {currentPage + 1}";
+    }
 }
