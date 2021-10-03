@@ -76,10 +76,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 978285854473863292, guid: c7298b7d218652d44b6b37e4f27bfcee,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978285854473863292, guid: c7298b7d218652d44b6b37e4f27bfcee,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 978285854473863292, guid: c7298b7d218652d44b6b37e4f27bfcee,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 120922755}
+    - target: {fileID: 978285854473863292, guid: c7298b7d218652d44b6b37e4f27bfcee,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 978285854473863292, guid: c7298b7d218652d44b6b37e4f27bfcee,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TakePicture
+      objectReference: {fileID: 0}
+    - target: {fileID: 978285854473863292, guid: c7298b7d218652d44b6b37e4f27bfcee,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 978285854473863295, guid: c7298b7d218652d44b6b37e4f27bfcee,
         type: 3}
       propertyPath: m_Name
-      value: Picture Taker
+      value: Whitebox Picture Taker
       objectReference: {fileID: 0}
     - target: {fileID: 978285855415134991, guid: c7298b7d218652d44b6b37e4f27bfcee,
         type: 3}
