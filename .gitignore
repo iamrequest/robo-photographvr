@@ -83,6 +83,7 @@ crashlytics-build.properties
 .gitignore.sw*
 
 /notes
+/Photos
 
 # -- Asset Store
 # SteamVR
