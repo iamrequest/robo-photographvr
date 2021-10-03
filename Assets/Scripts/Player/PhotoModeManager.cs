@@ -8,6 +8,7 @@ using UnityEngine;
 using Valve.VR;
 
 public class PhotoModeManager : MonoBehaviour {
+    public HeightCalibrator heightCalibrator;
     public PhotoModeRig photoModeRig;
     public HexaBodyPlayer3 hexabodyRig;
     public VRIK vrik;
@@ -40,6 +41,9 @@ public class PhotoModeManager : MonoBehaviour {
         // Optional: Do not allow the player to spam photo mode
         //  This prevents the player from starting photo mode while we're lerping time back to normal
         // if (photoModeRestoreTime != null) return;
+
+        // Do not allow user to enter photo mode until they've calibrated at least once
+        if (!heightCalibrator.IsCalibrated) return;
 
         if (IsPhotoModeActive) {
             StopPhotoMode();

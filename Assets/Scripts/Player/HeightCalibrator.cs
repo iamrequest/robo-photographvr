@@ -7,10 +7,12 @@ using Valve.VR;
 
 // See also: VRIKCalibrationController
 public class HeightCalibrator : MonoBehaviour {
+    public PhotoModeManager photoModeManager;
     public VRIK vrik;
     public float scaleMultiplier;
     public Transform leftHandAnchor, rightHandAnchor, hmdAnchor;
     public SteamVR_Action_Boolean calibrateHeightAction;
+    public bool IsCalibrated { get; private set; }
 
     private void OnEnable() {
         calibrateHeightAction.AddOnStateDownListener(CalibrateHeight, SteamVR_Input_Sources.Any);
@@ -20,6 +22,10 @@ public class HeightCalibrator : MonoBehaviour {
     }
 
     private void CalibrateHeight(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource) {
+        // Do not allow the player to calibrate while in photo mode
+        //  This results in a weird tpose (which is valid calibration, but it looks stupid)
+        if (photoModeManager.IsPhotoModeActive) return;
+
         CalibrateNew();
     }
 
@@ -35,6 +41,8 @@ public class HeightCalibrator : MonoBehaviour {
             null,
             leftHandAnchor,
             rightHandAnchor);
+
+        IsCalibrated = true;
     }
 
     [Button]
@@ -46,6 +54,8 @@ public class HeightCalibrator : MonoBehaviour {
             null, 
             leftHandAnchor,
             rightHandAnchor);
+
+        IsCalibrated = true;
     }
 
     [Button]
@@ -53,12 +63,6 @@ public class HeightCalibrator : MonoBehaviour {
     public void CalibrateScale() {
         if (calibrationData != null) {
             VRIKCalibrator.RecalibrateScale(vrik, calibrationData, scaleMultiplier);
-        }
-    }
-
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.C)) {
-            CalibrateNew();
         }
     }
 }
