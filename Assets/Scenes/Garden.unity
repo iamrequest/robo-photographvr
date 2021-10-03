@@ -664,6 +664,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 602418288994027763, guid: 3e543e23b699df645aeb2dce14a989cc,
+        type: 3}
+      propertyPath: sourceCameraRoll
+      value: 
+      objectReference: {fileID: 956004187}
     - target: {fileID: 602418288994027764, guid: 3e543e23b699df645aeb2dce14a989cc,
         type: 3}
       propertyPath: m_Name
@@ -713,6 +718,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1525073131}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &278653081 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 120922755, guid: 6eacfc66221617049befef3ed3c4f205,
+    type: 3}
+  m_PrefabInstance: {fileID: 1525073131}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8997e3c14312ece4f90cd756d1536c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &374129420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2171,6 +2188,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 602418288994027763, guid: 3e543e23b699df645aeb2dce14a989cc,
+        type: 3}
+      propertyPath: sourceCameraRoll
+      value: 
+      objectReference: {fileID: 956004187}
     - target: {fileID: 602418288994027764, guid: 3e543e23b699df645aeb2dce14a989cc,
         type: 3}
       propertyPath: m_Name
@@ -2775,6 +2797,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817203622023967896, guid: 6eacfc66221617049befef3ed3c4f205,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817203622023967896, guid: 6eacfc66221617049befef3ed3c4f205,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817203622023967896, guid: 6eacfc66221617049befef3ed3c4f205,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 278653081}
+    - target: {fileID: 2817203622023967896, guid: 6eacfc66221617049befef3ed3c4f205,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817203622023967896, guid: 6eacfc66221617049befef3ed3c4f205,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TakePicture
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817203622023967896, guid: 6eacfc66221617049befef3ed3c4f205,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2817203622023967899, guid: 6eacfc66221617049befef3ed3c4f205,
         type: 3}

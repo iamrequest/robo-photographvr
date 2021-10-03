@@ -17,12 +17,14 @@ public class CameraRoll : MonoBehaviour {
         newPhoto.texture = rt;
         newPhoto.image.texture = newPhoto.texture;
         newPhoto.timestamp = System.DateTime.Now;
+        newPhoto.sourceCameraRoll = this;
 
         photos.Add(newPhoto);
         onPhotoAdded.Invoke();
     }
     public void AddPhoto(Photo photo) {
         photos.Add(photo);
+        photo.sourceCameraRoll = this;
 
         onPhotoAdded.Invoke();
     }
