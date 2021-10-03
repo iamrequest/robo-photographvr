@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using HurricaneVR.Framework.Core;
+using Sirenix.OdinInspector;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,10 +7,16 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Photo : MonoBehaviour {
+    [HideInInspector]
+    public HVRGrabbable hvrGrabbable;
     public RenderTexture texture;
     public DateTime timestamp;
 
     public RawImage image;
+
+    private void Awake() {
+        hvrGrabbable = GetComponent<HVRGrabbable>();
+    }
 
     [Button]
     // https://gist.github.com/krzys-h/76c518be0516fb1e94c7efbdcd028830
