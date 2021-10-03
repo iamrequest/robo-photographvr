@@ -1083,6 +1083,7 @@ GameObject:
   - component: {fileID: 7244374769782868094}
   - component: {fileID: 7244374769782868092}
   - component: {fileID: 7244374769782868095}
+  - component: {fileID: 5191556438387400389}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -1192,6 +1193,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5191556438387400389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374769782868353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374769784682345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1376,7 @@ GameObject:
   - component: {fileID: 7244374769813810013}
   - component: {fileID: 7244374769813810011}
   - component: {fileID: 7244374769813810010}
+  - component: {fileID: 7730795809267963959}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -1471,6 +1486,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7730795809267963959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374769813810012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374770137257174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,6 +1590,7 @@ GameObject:
   - component: {fileID: 7244374770199894436}
   - component: {fileID: 7244374770199894434}
   - component: {fileID: 7244374770199894437}
+  - component: {fileID: 3595002582385096160}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -1671,6 +1700,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3595002582385096160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374770199894439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374770236394125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1725,7 @@ GameObject:
   - component: {fileID: 7244374770236394122}
   - component: {fileID: 7244374770236394120}
   - component: {fileID: 7244374770236394123}
+  - component: {fileID: 5235961010052103722}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -1792,6 +1835,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5235961010052103722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374770236394125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374770397258610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,6 +1939,7 @@ GameObject:
   - component: {fileID: 7244374770430459964}
   - component: {fileID: 7244374770430459962}
   - component: {fileID: 7244374770430459965}
+  - component: {fileID: 6504093937210023179}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -1992,6 +2049,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6504093937210023179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374770430459967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374770563789065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,6 +2232,7 @@ GameObject:
   - component: {fileID: 7244374770746213088}
   - component: {fileID: 7244374770746213086}
   - component: {fileID: 7244374770746213089}
+  - component: {fileID: 5116761379709459921}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -2271,6 +2342,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5116761379709459921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374770746213091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374770905650117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2398,6 +2482,7 @@ GameObject:
   - component: {fileID: 7244374770946254222}
   - component: {fileID: 7244374770946254220}
   - component: {fileID: 7244374770946254223}
+  - component: {fileID: 5562630070002483488}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -2507,6 +2592,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5562630070002483488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374770946254225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374770952580692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,6 +2617,7 @@ GameObject:
   - component: {fileID: 7244374770952580693}
   - component: {fileID: 7244374770952580691}
   - component: {fileID: 7244374770952580690}
+  - component: {fileID: 6591595817143492665}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -2628,6 +2727,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6591595817143492665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374770952580692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374770956720663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2798,6 +2910,7 @@ GameObject:
   - component: {fileID: 7244374771001028659}
   - component: {fileID: 7244374771001028657}
   - component: {fileID: 7244374771001028656}
+  - component: {fileID: 3380748426431884561}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -2907,6 +3020,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3380748426431884561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374771001028658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374771051803708
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,6 +3045,7 @@ GameObject:
   - component: {fileID: 7244374771051803709}
   - component: {fileID: 7244374771051803707}
   - component: {fileID: 7244374771051803706}
+  - component: {fileID: 8624929207608517462}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -3028,6 +3155,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8624929207608517462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374771051803708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374771141605368
 GameObject:
   m_ObjectHideFlags: 0
@@ -3119,6 +3259,7 @@ GameObject:
   - component: {fileID: 7244374771244926615}
   - component: {fileID: 7244374771244926613}
   - component: {fileID: 7244374771244926612}
+  - component: {fileID: 7953524449952469443}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -3228,6 +3369,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7953524449952469443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374771244926614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374771395720062
 GameObject:
   m_ObjectHideFlags: 0
@@ -3398,6 +3552,7 @@ GameObject:
   - component: {fileID: 7244374771474299972}
   - component: {fileID: 7244374771474299970}
   - component: {fileID: 7244374771474299973}
+  - component: {fileID: 370473864625475300}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -3507,6 +3662,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &370473864625475300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374771474299975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374771507129813
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,6 +3687,7 @@ GameObject:
   - component: {fileID: 7244374771507129810}
   - component: {fileID: 7244374771507129808}
   - component: {fileID: 7244374771507129811}
+  - component: {fileID: 1164807140953158846}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -3628,6 +3797,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1164807140953158846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374771507129813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374771659123262
 GameObject:
   m_ObjectHideFlags: 0
@@ -3719,6 +3901,7 @@ GameObject:
   - component: {fileID: 7244374771676338016}
   - component: {fileID: 7244374771676338014}
   - component: {fileID: 7244374771676338017}
+  - component: {fileID: 1058850922503387631}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -3828,6 +4011,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1058850922503387631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374771676338019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7244374771728173667
 GameObject:
   m_ObjectHideFlags: 0
@@ -3998,6 +4194,7 @@ GameObject:
   - component: {fileID: 7244374771848760109}
   - component: {fileID: 7244374771848760107}
   - component: {fileID: 7244374771848760106}
+  - component: {fileID: 7314197952777629884}
   m_Layer: 0
   m_Name: Photo Socket(Clone)
   m_TagString: Untagged
@@ -4107,6 +4304,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.055618767
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7314197952777629884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244374771848760108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c187661277640aab87258100070d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SocketType: Photo
 --- !u!1 &7595729543966454966
 GameObject:
   m_ObjectHideFlags: 0

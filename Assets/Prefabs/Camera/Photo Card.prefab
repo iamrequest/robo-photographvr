@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 602418288994027763}
   - component: {fileID: 5689345454181823174}
   - component: {fileID: 2383596447570145295}
-  - component: {fileID: 6944495203735208886}
+  - component: {fileID: 2510886060274694703}
   m_Layer: 0
   m_Name: Photo Card
   m_TagString: Untagged
@@ -471,7 +471,7 @@ MonoBehaviour:
   HandGrabbers: []
   Stabbers: []
   Stabbable: {fileID: 0}
---- !u!114 &6944495203735208886
+--- !u!114 &2510886060274694703
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 602418288994027764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258d25e1a2b14754b247fd5f28e9f682, type: 3}
+  m_Script: {fileID: 11500000, guid: 782b616f680d4ed0a890789e57800e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SocketOrientation: {fileID: 4051892063857425974}
@@ -490,6 +490,7 @@ MonoBehaviour:
   SocketedClip: {fileID: 0}
   UnsocketedClip: {fileID: 0}
   LinkedGrabbables: []
+  SocketType: Photo
 --- !u!1 &1163804443239159388
 GameObject:
   m_ObjectHideFlags: 0
