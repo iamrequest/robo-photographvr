@@ -8,11 +8,20 @@ using Valve.VR;
 // See also: VRIKCalibrationController
 public class HeightCalibrator : MonoBehaviour {
     public PhotoModeManager photoModeManager;
+    [Tooltip("Deactivated on Awake, re-activated on first calibration")]
+    public List<Renderer> bodyRenderers;
+
     public VRIK vrik;
     public float scaleMultiplier;
     public Transform leftHandAnchor, rightHandAnchor, hmdAnchor;
     public SteamVR_Action_Boolean calibrateHeightAction;
     public bool IsCalibrated { get; private set; }
+
+    private void Awake() {
+        foreach (Renderer renderer in bodyRenderers) {
+            renderer.enabled = false;
+        }
+    }
 
     private void OnEnable() {
         calibrateHeightAction.AddOnStateDownListener(CalibrateHeight, SteamVR_Input_Sources.Any);
@@ -42,7 +51,7 @@ public class HeightCalibrator : MonoBehaviour {
             leftHandAnchor,
             rightHandAnchor);
 
-        IsCalibrated = true;
+        OnCalibrate();
     }
 
     [Button]
@@ -55,7 +64,7 @@ public class HeightCalibrator : MonoBehaviour {
             leftHandAnchor,
             rightHandAnchor);
 
-        IsCalibrated = true;
+        OnCalibrate();
     }
 
     [Button]
@@ -63,6 +72,16 @@ public class HeightCalibrator : MonoBehaviour {
     public void CalibrateScale() {
         if (calibrationData != null) {
             VRIKCalibrator.RecalibrateScale(vrik, calibrationData, scaleMultiplier);
+        }
+    }
+
+    private void OnCalibrate() {
+        if (!IsCalibrated) {
+            IsCalibrated = true;
+
+            foreach (Renderer renderer in bodyRenderers) {
+                renderer.enabled = true;
+            }
         }
     }
 }
