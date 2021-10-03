@@ -643,9 +643,9 @@ MonoBehaviour:
   RightAutoPose: 0
   SelectionIndex: 0
   PoseNames:
-  - 'Primary: camera-side'
+  - 'Primary: camera-rear-pose'
   PrimaryPose:
-    Pose: {fileID: 0}
+    Pose: {fileID: 11400000, guid: a471f1cfa0932214c904c9a60d332daf, type: 2}
     Weight: 1
     Mask: 0
     Type: 0
