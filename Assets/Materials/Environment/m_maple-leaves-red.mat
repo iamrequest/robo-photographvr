@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: m_maple-leaves
+  m_Name: m_maple-leaves-red
   m_Shader: {fileID: -6465566751694194690, guid: 1b9bcfd7b439b3a41863d1e83d137dd6,
     type: 3}
   m_ShaderKeywords: 
