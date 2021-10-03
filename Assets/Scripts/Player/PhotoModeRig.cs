@@ -7,7 +7,6 @@ using Valve.VR;
 // See also: https://github.com/iamrequest/shattered-skies/blob/main/Assets/Scripts/Cameras/VRPhotoModeManager.cs
 public class PhotoModeRig : MonoBehaviour {
     public PhotoModeManager photoModeManager;
-    [HideInInspector]
     public Camera cam;
 
     private bool isSprinting;
@@ -18,10 +17,6 @@ public class PhotoModeRig : MonoBehaviour {
 
     [Range(0f, 25f)]
     public float defaultSpeed, sprintSpeed;
-
-    private void Awake() {
-        cam = GetComponentInChildren<Camera>();
-    }
 
     private void OnEnable() {
         moveAction.AddOnAxisListener(DoMove, SteamVR_Input_Sources.Any);

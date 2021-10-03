@@ -1,7 +1,9 @@
 ﻿using Sirenix.OdinInspector;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 public class PhotoCamera : MonoBehaviour {
     public CameraRoll cameraRoll;
