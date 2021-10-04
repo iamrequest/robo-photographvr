@@ -11,4 +11,12 @@ public class PhotoDiscardBin : MonoBehaviour {
             Destroy(photo.gameObject);
         }
     }
+
+    public void OnPhotoEnteredEntered(Collider other) {
+        if (other.TryGetComponent(out Photo photo)) {
+            if (!photo.hvrGrabbable.IsBeingHeld) {
+                Destroy(photo.gameObject);
+            }
+        }
+    }
 }
