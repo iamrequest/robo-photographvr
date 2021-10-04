@@ -369,7 +369,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -543,7 +543,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -803,6 +803,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraRoll: {fileID: 0}
   cam: {fileID: 6110433311525602355}
+  pictureTakenSFX: {fileID: 8300000, guid: 166447986c2e67a47b126fadacdc012a, type: 3}
+  pitchRange: 0.1
   takePhotoAction:
     actionPath: /actions/HVR/in/RightTriggerButton
     needsReinit: 0

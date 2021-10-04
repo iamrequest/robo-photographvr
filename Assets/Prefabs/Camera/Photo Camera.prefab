@@ -127,7 +127,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -427,6 +427,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraRoll: {fileID: 0}
   cam: {fileID: 5862085700407404393}
+  pictureTakenSFX: {fileID: 0}
+  pitchRange: 0
 --- !u!114 &1741404280880898433
 MonoBehaviour:
   m_ObjectHideFlags: 0
