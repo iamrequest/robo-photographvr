@@ -275,6 +275,19 @@ MonoBehaviour:
   Scale: {x: 24.75, y: 24.75, z: 24.75}
   ScaleTime: 0.25
   ScaleIfInvalid: 0
+--- !u!114 &6837456718088899492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4595566395176450653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db1d6c18854e6c41815aac525a3b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  photoDeletedSFX: {fileID: 8300000, guid: 13fd04439967c4f4695fda0f4034fc5f, type: 3}
 --- !u!1 &4627727976366512911
 GameObject:
   m_ObjectHideFlags: 0
