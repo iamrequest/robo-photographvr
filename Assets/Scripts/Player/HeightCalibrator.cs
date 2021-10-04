@@ -23,6 +23,21 @@ public class HeightCalibrator : MonoBehaviour {
         }
     }
 
+    private void Start() {
+        // If we just came from the title screen (which probably already set calibration data), then calibrate the player using that data
+        if (TitleScreenHeightCalibrator.Instance != null) {
+            if (TitleScreenHeightCalibrator.Instance.calibrationData != null) {
+                StartCoroutine(IntialCalibration());
+            }
+        }
+    }
+
+    private IEnumerator IntialCalibration() {
+        yield return new WaitForEndOfFrame();
+        CalibrateUsingExistingData(TitleScreenHeightCalibrator.Instance.calibrationData);
+    }
+
+
     private void OnEnable() {
         calibrateHeightAction.AddOnStateDownListener(CalibrateHeight, SteamVR_Input_Sources.Any);
     }
@@ -59,6 +74,17 @@ public class HeightCalibrator : MonoBehaviour {
     public void CalibrateUsingExistingData() {
         VRIKCalibrator.Calibrate(vrik, 
             calibrationData, 
+            hmdAnchor, 
+            null, 
+            leftHandAnchor,
+            rightHandAnchor);
+
+        OnCalibrate();
+    }
+
+    public void CalibrateUsingExistingData(VRIKCalibrator.CalibrationData data) {
+        VRIKCalibrator.Calibrate(vrik, 
+            data, 
             hmdAnchor, 
             null, 
             leftHandAnchor,
