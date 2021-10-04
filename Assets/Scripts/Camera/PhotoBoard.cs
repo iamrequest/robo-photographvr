@@ -140,7 +140,7 @@ public class PhotoBoard : MonoBehaviour {
                 // TODO: Check if the photo is being grabbed first
                 Photo currentPhoto = cameraRoll.photos[photoIndex];
                 currentPhoto.gameObject.SetActive(true);
-                photoSockets[photoIndex].TryGrab(currentPhoto.hvrGrabbable, true, true);
+                photoSockets[photoIndex].TryGrab(currentPhoto.hvrGrabbable, true, false);
 
                 photoIndex++;
             }
