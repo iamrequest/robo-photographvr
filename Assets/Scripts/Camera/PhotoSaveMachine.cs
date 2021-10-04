@@ -19,7 +19,7 @@ public class PhotoSaveMachine : MonoBehaviour {
     public void TrySavePhoto(HVRGrabberBase hvrGrabberBase, HVRGrabbable hvrGrabbable) {
         if (hvrGrabbable.TryGetComponent(out Photo photo)) {
             animator.SetTrigger(animHashSavePicture);
-            //photo.SaveToFile();
+            photo.SaveToFile();
             SFXPlayer.Instance.PlaySFX(saveSFX, transform.position);
         }
     }
