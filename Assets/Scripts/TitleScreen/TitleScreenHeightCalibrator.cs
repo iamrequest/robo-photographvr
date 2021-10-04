@@ -16,6 +16,9 @@ public class TitleScreenHeightCalibrator : MonoBehaviour {
     public bool IsCalibrated { get; private set; }
     public UnityEvent onCalibrate;
 
+    [Tooltip("Ignore calibration requests until the titlescreen says you can calibrate")]
+    public float startupCalibrationDelay;
+
     private void Awake() {
         DontDestroyOnLoad(gameObject);
         if (Instance == null) {
@@ -34,7 +37,9 @@ public class TitleScreenHeightCalibrator : MonoBehaviour {
     }
 
     private void CalibrateHeight(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource) {
-        CalibrateNew();
+        if (Time.time > startupCalibrationDelay) {
+            CalibrateNew();
+        }
     }
 
     public VRIKCalibrator.Settings settings;
