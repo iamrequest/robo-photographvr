@@ -120,6 +120,7 @@ public class PhotoBoard : MonoBehaviour {
     [Button]
     public void RenderPage() {
         int photoIndex = currentPage * rowCount * colCount;
+        int socketIndex = 0;
 
         // Release all sockets, disable all photos
         foreach (HVRSocket socket in photoSockets) {
@@ -140,19 +141,23 @@ public class PhotoBoard : MonoBehaviour {
                 // TODO: Check if the photo is being grabbed first
                 Photo currentPhoto = cameraRoll.photos[photoIndex];
                 currentPhoto.gameObject.SetActive(true);
-                photoSockets[photoIndex].TryGrab(currentPhoto.hvrGrabbable, true, false);
+                photoSockets[socketIndex].TryGrab(currentPhoto.hvrGrabbable, true, false);
 
                 photoIndex++;
+                socketIndex++;
             }
         }
     }
 
+    [Button]
     public void NextPage() {
         currentPage = Mathf.Clamp(currentPage + 1, 0, maxPages);
         RenderPage();
 
         UpdatePageText();
     }
+
+    [Button]
     public void PrevPage() {
         currentPage = Mathf.Clamp(currentPage - 1, 0, maxPages);
         RenderPage();
