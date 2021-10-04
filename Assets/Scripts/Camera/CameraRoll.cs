@@ -9,8 +9,12 @@ public class CameraRoll : MonoBehaviour {
     public GameObject photoPrefab;
     public List<Photo> photos;
     public UnityEvent onPhotoAdded, onPhotoRemoved;
+    [Range(20, 150)]
+    public int maxCapacity;
 
     public void AddPhoto(RenderTexture rt) {
+        if (photos.Count >= maxCapacity) return;
+
         GameObject newPhotoGameObject = Instantiate(photoPrefab, transform.position, transform.rotation);
         Photo newPhoto = newPhotoGameObject.GetComponent<Photo>();
 
@@ -23,6 +27,8 @@ public class CameraRoll : MonoBehaviour {
         onPhotoAdded.Invoke();
     }
     public void AddPhoto(Photo photo) {
+        if (photos.Count >= maxCapacity) return;
+
         photos.Add(photo);
         photo.sourceCameraRoll = this;
 

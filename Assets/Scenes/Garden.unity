@@ -4056,7 +4056,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 334249584}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &338628410
+--- !u!4 &358302741 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 618018038304976153, guid: 970a2883981c9224db3174c26349fa10,
+    type: 3}
+  m_PrefabInstance: {fileID: 2043907793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!43 &362542101
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4219,12 +4225,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!4 &358302741 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 618018038304976153, guid: 970a2883981c9224db3174c26349fa10,
-    type: 3}
-  m_PrefabInstance: {fileID: 2043907793}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &372774871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15832,6 +15832,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1395997066}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1398075534
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1422635024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18004,40 +18038,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1603756872}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1610424371
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1617754445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23614,12 +23614,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 338628410}
+      objectReference: {fileID: 362542101}
     - target: {fileID: 4829099482746371591, guid: 735c4d08cb64b824f8218a1309536cb4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1610424371}
+      objectReference: {fileID: 1398075534}
     - target: {fileID: 8421453287489079207, guid: 735c4d08cb64b824f8218a1309536cb4,
         type: 3}
       propertyPath: cameraRoll
@@ -26005,6 +26005,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1873668562}
     m_Modifications:
+    - target: {fileID: 501396829155984629, guid: ba07cb9c22b3f934b8da91bde79d193f,
+        type: 3}
+      propertyPath: m_text
+      value: Page 1/5
+      objectReference: {fileID: 0}
     - target: {fileID: 2698214500983429617, guid: ba07cb9c22b3f934b8da91bde79d193f,
         type: 3}
       propertyPath: m_LocalPosition.z

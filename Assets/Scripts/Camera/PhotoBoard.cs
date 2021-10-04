@@ -166,6 +166,6 @@ public class PhotoBoard : MonoBehaviour {
     }
 
     public void UpdatePageText() {
-        pageNumText.text = $"Page {currentPage + 1}";
+        pageNumText.text = $"Page {currentPage + 1}/{maxPages + 1}";
     }
 }

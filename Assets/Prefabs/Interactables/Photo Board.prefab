@@ -2470,6 +2470,7 @@ MonoBehaviour:
   onPhotoRemoved:
     m_PersistentCalls:
       m_Calls: []
+  maxCapacity: 75
 --- !u!1 &7244374770946254225
 GameObject:
   m_ObjectHideFlags: 0
