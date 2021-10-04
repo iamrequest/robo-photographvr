@@ -29,6 +29,7 @@ public class TitleScreenManager : MonoBehaviour {
     private IEnumerator LoadGameSceneAfterDelay() {
         yield return new WaitForSeconds(loadSceneDelay);
         fadeCamAnimator.SetTrigger("fadeOut");
+        titleScreenHeightCalibrator.enabled = false;
         yield return new WaitForSeconds(fadeDuration);
         LoadGameScene();
     }

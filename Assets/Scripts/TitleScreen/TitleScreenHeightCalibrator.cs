@@ -5,12 +5,14 @@ using UnityEngine.Events;
 using RootMotion.FinalIK;
 using Sirenix.OdinInspector;
 using Valve.VR;
+using HexabodyVR.PlayerController;
 
 // See also: VRIKCalibrationController, HeightCalibrator
 public class TitleScreenHeightCalibrator : MonoBehaviour {
     public static TitleScreenHeightCalibrator Instance { get; private set; }
 
     public VRIK vrik;
+    public HexaBodyPlayer3 hexabody;
     public Transform leftHandAnchor, rightHandAnchor, hmdAnchor;
     public SteamVR_Action_Boolean calibrateHeightAction;
     public bool IsCalibrated { get; private set; }
@@ -55,6 +57,7 @@ public class TitleScreenHeightCalibrator : MonoBehaviour {
             leftHandAnchor,
             rightHandAnchor);
 
+        hexabody.Calibrate();
         onCalibrate.Invoke();
     }
 }

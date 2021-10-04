@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using RootMotion.FinalIK;
+using HexabodyVR.PlayerController;
 using Sirenix.OdinInspector;
 using Valve.VR;
 
@@ -12,6 +13,7 @@ public class HeightCalibrator : MonoBehaviour {
     public List<Renderer> bodyRenderers;
 
     public VRIK vrik;
+    public HexaBodyPlayer3 hexabody;
     public float scaleMultiplier;
     public Transform leftHandAnchor, rightHandAnchor, hmdAnchor;
     public SteamVR_Action_Boolean calibrateHeightAction;
@@ -66,6 +68,7 @@ public class HeightCalibrator : MonoBehaviour {
             leftHandAnchor,
             rightHandAnchor);
 
+        hexabody.Calibrate();
         OnCalibrate();
     }
 
@@ -79,6 +82,7 @@ public class HeightCalibrator : MonoBehaviour {
             leftHandAnchor,
             rightHandAnchor);
 
+        hexabody.Calibrate();
         OnCalibrate();
     }
 
@@ -90,6 +94,7 @@ public class HeightCalibrator : MonoBehaviour {
             leftHandAnchor,
             rightHandAnchor);
 
+        hexabody.Calibrate();
         OnCalibrate();
     }
 
