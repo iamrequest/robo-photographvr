@@ -50,3 +50,35 @@ In a game with actual consequences, it could be easy to abuse this mechanic, so 
 
 Another consideration is letting the player freely roam in photo mode. How far can they stray from the player? Should they be allowed to move through walls in photo mode? This could potentially ruin some key moments (eg: letting the player peek through a wall or around a corner to spot an enemy, letting the player clip through walls to discover where hidden items are, etc). During this jam, I tested moving the photo mode rig with a character controller instead of just moving their transform around so that they would be bound by collision, but ultimately I wasn't happy with the results. It was too easy to clip through steep terrain, and it prevented the player from getting nice shots being positioned low to the ground. More work needed here if I were to implement it in a game, but I think the character controller route is the best option I've looked at.
 
+
+## Project Settings 
+
+- Unity 2019.4.24f1
+- Universal Render Pipeline (7.5.3)
+- OpenVR Desktop (2.0.5)
+- SteamVR (2.7.3, sdk 1.14.15)
+- TextMesh Pro (2.1.4)
+- Visual Effect Graph (7.5.3)
+- Hurricane VR (2.3)
+- Odin Inspector (3.0.9)
+- Hexabody VR Player Controller (1.25)
+
+## Third Party Assets
+
+Type|Asset|Author|License
+-|-|-|-
+Font|[Press Start 2P Font](https://www.fontspace.com/press-start-2p-font-f11591)|[codeman38]()|[SIL Open Font License (OFL)](https://www.fontspace.com/help#license-17)
+Shader|[Skybox Gradient Shader](https://www.youtube.com/watch?v=f6zUot73-gg&list=WL&index=9)|[Alex Strook](https://twitter.com/AlexStrook)|[]()
+BGM|[The Forest of the Yellow Witch](https://opengameart.org/content/the-forest-of-the-yellow-witch-low-intensity-adventure-loopable)|[Request](https://twitter.com/requestmoe)|[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+Textures|[UI Pack: RPG Expansion](https://www.kenney.nl/assets/ui-pack-rpg-expansion)|[Kenney](https://twitter.com/KenneyNL)|[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+Textures|[Game Icons](https://kenney.nl/assets/game-icons)|[Kenney](https://twitter.com/KenneyNL)|[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+Textures|[UI Pack: Space Expansion](https://kenney.nl/assets/ui-pack-space-expansion)|[Kenney](https://twitter.com/KenneyNL)|[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
+
+## Unity Assets
+
+Type|Asset|Asset URL|Author
+-|-|-|-
+VR Base Framework|SteamVR Plugin|https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647|Valve
+VR Interactions|Hurricane VR|https://assetstore.unity.com/packages/tools/physics/hurricane-vr-physics-interaction-toolkit-177300|Cloudwalkin Games 
+VR Player Controller|Hexabody|https://assetstore.unity.com/packages/tools/physics/hexabody-vr-player-controller-185521|Cloudwalkin Games 
+Inspector|Odin Inspector and Serializer|https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041|Sirenix
